@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace FarmerSchemeProjectNew.Models
-{[DataContract]
-    public partial class Insurance
+/*namespace FarmerSchemeProjectNew.Models
+{
+    [DataContract]
+    public class InsuranceApplication
     {
         [DataMember]
         public string InsuranceCompany { get; set; }
@@ -28,12 +29,6 @@ namespace FarmerSchemeProjectNew.Models
         public string Season { get; set; }
         [DataMember]
         public string Year { get; set; }
-        [DataMember]
-        public int? PolicyNo { get; set; }
-        [DataMember]
-        public int InsuranceId { get; set; }
 
-        public virtual ClaimInsurance PolicyNoNavigation { get; set; }
-        public virtual Roletable User { get; set; }
     }
-}
+}*/
