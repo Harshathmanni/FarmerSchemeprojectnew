@@ -1,0 +1,32 @@
+form{
+  text-align: center;
+  border: 5px solid black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+
+button
+{
+    background-color: rgb(71, 212, 95);
+    color: #fff;
+
+}
+button:hover
+{
+    color: rgb(32, 18, 18);
+}
+button
+.c{
+  text-align: center;
+  }
+  .g{
+    text-align: center;
+  }
+  .btn{
+    text-align: center;
+    width: 100;
+ 
+  }

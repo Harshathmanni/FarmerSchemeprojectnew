@@ -1,0 +1,126 @@
+
+<p> welcome claim-insurance </p>
+<form >
+    <div class="c">
+    
+      
+      <h2>Particulars Of Insuree</h2>
+      <div class="mt-0 mb-0 col-lg-0 col-lg-0">
+     <label for="PolicyNo"><b>PolicyNo</b></label>
+      <input type="number"placeholder="Enter PolicyNo" name="PolicyNo" id="PolicyNo" [(ngModel)]="Claimmodels.PolicyNo" required>&nbsp;&nbsp;
+       </div>
+      <br/>
+  
+      <div class="mt-2 mb-2 col-lg-6 col-6">
+      <label for="Insurance_Company"><b>Insurance Company</b></label>
+      <input type="text" placeholder="Enter Company Name" name="Insurance Company" id="Insurance Company" [(ngModel)]="Claimmodels.InsuranceCompany" required>&nbsp;&nbsp;<br/>
+       </div>
+       
+       <br/>
+       <div class="mt-2 mb-2 col-lg-6 col-6">
+      <label for="Name_Of_Insuree"><b>Name Of Insuree</b></label>
+      <input type="text" placeholder="Enter Insuree Name" name="Enter Insuree Name" id="Enter Insuree Name" [(ngModel)]="Claimmodels.NameofInsure" required>&nbsp;&nbsp;
+      </div>
+      <br/>
+        
+       <div class="mt-2 mb-2 col-lg-6 col-6">
+      <label for="Sum_Insured"><b>Sum Insured</b></label>
+      <input type="number" placeholder="Enter Sum Insured" name="Sum Insured" id="Sum Insured" [(ngModel)]="Claimmodels.SumInsured" required><br/><br/>
+       </div>
+       <br/>
+       <div class="mt-2 mb-2 col-lg-6 col-6">
+        <label for="UserId"><b> User Id</b></label>
+        <input type="number" placeholder="Enter User Id" name=" UserId" id="UserId" [(ngModel)]="Claimmodels.UserId" required><br/><br/>
+       </div>
+       
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h2>Details Of Cause For Loss</h2>
+        <br/>
+        <br/>
+
+        <div class="mt-2 mb-2 col-lg-6 col-6">
+            <label for="Cause_Of_Loss"><b>Cause Of Loss</b></label>
+            <input type="string" placeholder="Cause Of Loss" name="Cause Of Loss" id="Cause Of Loss" [(ngModel)]="Claimmodels.CauseofLoss" required><br/><br/>
+        </div>
+              <br/>
+              <br/>
+         <div class="mt-2 mb-2 col-lg-6 col-6">
+                <label for="Date_Of_Loss"><b>Date Of Loss</b></label>
+                <input type="string" placeholder="Date Of Loss" name="Date Of Loss" id="Date Of Loss" [(ngModel)]="Claimmodels.DateOfLoss" required><br/><br/>
+        </div>
+         <br/>
+
+
+          <button class="btn btn-success"(click)="addCategory()">SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+</form>
+<hr/>
+          <table class ="table-table-hover" [width]="100" aria-colspan="2">
+
+            <thead aria-rowspan="2">
+        
+                <tr>
+        
+                    <th>PolicyNo</th>
+                    <br/>
+
+                    <th>NameOfInsure</th>
+                     
+                    <th>CauseOfLoss</th>
+
+                    <th>DateOfLoss</th>
+
+                    <br/>
+                    <br/>
+                    <th>InsuranceCompany</th>
+                    <br/>
+
+                    <th>SumInsured</th>
+        
+                </tr>
+        
+            </thead>
+        
+            <tbody *ngFor="let i of claiminsuranceinfo" aria-rowspan="2">
+        
+                <tr>
+        
+                    <td>{{i.policyNo}}</td>
+                    <br/>
+                    <td>{{i.nameofInsure}}</td>
+    
+                    <td>{{i.causeofLoss}}</td>
+
+                    <td>{{i.dateOfLoss}}</td>
+                    <br/>
+                    <br/>
+
+                    <td>{{i.insuranceCompany}}</td>
+                    <br/>
+
+                    <td>{{i.sumInsured}}</td>
+                    <br/>
+                    
+                   <td><button class="btn btn-danger" (click)="removeCategory(i.policyNo)">Delete</button></td>
+                   <td><button class="btn btn-success" (click)="editCategory(i.policyNo)">Edit</button></td>
+
+
+
+                    <br/>
+                    
+
+
+        
+                </tr>
+        
+        
+        
+            </tbody>
+        
+        </table>
+    
