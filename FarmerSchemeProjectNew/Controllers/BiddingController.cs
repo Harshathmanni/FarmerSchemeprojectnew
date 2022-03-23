@@ -86,7 +86,7 @@ namespace FarmerSchemeProjectNew.Controllers
             SellCrop sellcrop = new SellCrop();
             sellcrop.CropName = bidder_Welcome.CropName;
             sellcrop.CropType = bidder_Welcome.CropType;
-          
+            sellcrop.SellId = bidder_Welcome.SellId;
 
             db.SellCrops.Add(sellcrop);
 

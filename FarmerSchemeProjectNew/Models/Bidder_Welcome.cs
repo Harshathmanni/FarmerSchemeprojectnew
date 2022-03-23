@@ -10,7 +10,7 @@ namespace FarmerSchemeProjectNew.Models
     public class Bidder_Welcome
     {
         [Key]
-        public int SellId { get; set; }
+        public int SellId { get; set; }//sellcrop
         [DataMember]
         public string CropName { get; set; }
         [DataMember]
