@@ -1,0 +1,40 @@
+form{
+  text-align: center;
+  border: 2.5px solid black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+.content
+{
+  text-align: center;
+  border: top left radius 2px;;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 2% 2%;
+}
+
+button
+{
+    background-color: rgb(71, 212, 95);
+    color: #fff;
+
+}
+button:hover
+{
+    color: rgb(32, 18, 18);
+}
+.c{
+    text-align: center;
+    }
+    .g{
+      text-align: center;
+    }
+    .btn{
+      text-align: center;
+      width: 20%;
+   
+    }

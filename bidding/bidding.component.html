@@ -1,0 +1,64 @@
+<p>bidding works!</p>
+
+<form>
+  
+        <div class="c">
+          
+          
+          
+          <table border="5" width="715" height="100">
+                <thead>
+                  <tr>
+                    <th>Crop Name</th>
+                    <br/>
+                    <th>Crop Type</th>
+                    <br/>
+
+                    <th>Base Price</th>
+                    <br/>
+                    <th>Current Bid</th>
+                   
+                  </tr>
+                </thead>
+                <tbody *ngFor="let c of biddinginfo">
+                  <tr>
+                    
+                    <td>{{c.cropName}}</td>
+                    <td>{{c.cropType}}</td>
+                    <td>{{c.BasePrice}}</td>
+                    <td>{{c.CurrentBid}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+            </div>
+            
+         
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+                <div>
+                  <br/><br/>
+                   <br/><br/>
+                   <br/>
+                   <div class="mt-2 mb-2 col-lg-6 col-6" text-align="=center">
+                  <label for="Bid_Amount" align="right"><b>Bid_Amount</b></label>
+                  <input type="text" placeholder="Enter Bid_Amount" name="Bid_Amount" id="Bid_Amount"[(ngModel)]="biddinginfo.Bid_Amount" required>&nbsp;&nbsp;
+                  </div>
+                  <br/>
+            
+            
+            
+                  
+                  <br/>
+                  <div>
+                    <button class="btn btn-sucess" align="right" (click)="addCategory()">CONFIRM</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                  </div>
+                  </div>
+
+                </form>  
+     
